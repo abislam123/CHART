@@ -78,7 +78,7 @@ def main():
               'time is ' + str(int_time) + ' seconds.')
     tb = chart.blocks.TopBlock(c_freq=args.freq_i, veclength=args.veclength,
                                samp_rate=args.samp_rate, int_length=args.int_length,
-                               nint=args.nint, bias=args.biasT data_dir=args.data_dir)
+                               nint=args.nint, bias=args.biasT, data_dir=args.data_dir)
     scan_number = 0  # used as scan counter
     t0 = time.time()
     # Remove the empty file that was created when instantiating top block

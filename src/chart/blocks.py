@@ -79,7 +79,6 @@ class TopBlock(gr.top_block):
             self.rtlsdr_source_0 = osmosdr.source(args="numchan=" + str(1) + " " + "rtl,bias=1")
         else:
             self.rtlsdr_source_0 = osmosdr.source(args="numchan=" + str(1) + " ")
-        self.rtlsdr_source_0 = osmosdr.source(args="numchan=" + str(1) + " ")
         self.rtlsdr_source_0.set_sample_rate(self.samp_rate)
         self.set_c_freq(c_freq)
         self.rtlsdr_source_0.set_freq_corr(0, 0)
